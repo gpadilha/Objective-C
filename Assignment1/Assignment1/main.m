@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
             inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
             
             NSString *resultString;
-            NSInteger resultInteger;
+            NSDecimalNumber *resultNumber;
             switch (option) {
                 case 1:
                     resultString = [inputString uppercaseString];
@@ -53,9 +53,12 @@ int main(int argc, const char * argv[]) {
                     printf("Result string: %s\n", [resultString UTF8String]);
                     break;
                 case 3:
-                    resultInteger = [inputString integerValue];
-                    //TODO: conversion
-                    printf("Result integer: %s\n", [resultString UTF8String]);
+                    resultNumber = [NSDecimalNumber decimalNumberWithString:inputString ];
+                    resultString = [NSString stringWithFormat:@"%.02f", [resultNumber floatValue]];
+                    if([resultString isEqualToString:@"nan"]){
+                        resultString = @"Failed to convert your input to number";
+                    }
+                    printf("Result number: %s\n", [resultString UTF8String]);
                     break;
                 case 4:
                     resultString = [inputString stringByAppendingString:[NSString stringWithUTF8String:", eh?"]];
@@ -80,7 +83,7 @@ int main(int argc, const char * argv[]) {
                     break;
             }
             
-            printf("Press ENTER key to Continue\n");
+            printf("\nPress ENTER key to Continue\n");
             getchar();
             printMenu();
             printf("Select one option: ");
