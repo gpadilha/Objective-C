@@ -13,9 +13,9 @@
 - (instancetype)initWithHeight:(float) height width:(float) width length:(float) length{
     self = [super init];
     if(self){
-        self.height = height;
-        self.width = width;
-        self.length = length;
+        _height = height;
+        _width = width;
+        _length = length;
     }
     return self;
 }
