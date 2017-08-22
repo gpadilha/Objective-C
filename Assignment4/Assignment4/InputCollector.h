@@ -1,0 +1,17 @@
+//
+//  InputCollector.h
+//  Assignment4
+//
+//  Created by guilherme on 2017-08-22.
+//  Copyright © 2017 gpadilha. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+@interface InputCollector : NSObject
++ (NSString*) getMenuString;
+
++ (NSString*) getUserInputWithMessage:(NSString*) message;
++ (NSString*) getUserInputWithMessage:(NSString*) message inputSize:(int) inputSize;
+@end
