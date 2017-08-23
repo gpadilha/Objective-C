@@ -35,4 +35,9 @@ static NSString* menuString = @"What do you would like to do next\n\
     return menuString;
 }
 
++(void) waitUserInputToContinue{
+    printf("\nPress ENTER key to Continue\n");
+    getchar();
+}
+
 @end

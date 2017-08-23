@@ -16,6 +16,7 @@
 -(instancetype)init;
 -(void)addContact:(Contact*) newContact;
 -(Contact*)findWithContactName:(NSString*) name;
+-(Contact*)findWithContactEmail:(NSString*) email;
 -(Contact*)getContactAtIndex:(NSUInteger) index;
 -(void)printContacts;
 

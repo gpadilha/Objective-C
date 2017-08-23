@@ -14,11 +14,11 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"MATHS!");
-        NSString* userAnswer;
-        ScoreKeeper* scoreK = [[ScoreKeeper alloc]init];
+        NSString *userAnswer;
+        ScoreKeeper *scoreK = [[ScoreKeeper alloc]init];
         
         while(true){
-            AdditionQuestion* add1 = [[AdditionQuestion alloc]init];
+            AdditionQuestion *add1 = [[AdditionQuestion alloc]init];
             userAnswer = [Functions getUserInputWithMessage:add1.question inputSize:0];
             
             if([userAnswer isEqualToString:@"quit"]) break;

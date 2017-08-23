@@ -11,7 +11,7 @@
 
 @interface InputCollector : NSObject
 + (NSString*) getMenuString;
-
++(void) waitUserInputToContinue;
 + (NSString*) getUserInputWithMessage:(NSString*) message;
 + (NSString*) getUserInputWithMessage:(NSString*) message inputSize:(int) inputSize;
 @end

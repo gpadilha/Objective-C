@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Phone.h"
 
 @interface Contact : NSObject
 
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* email;
+@property (nonatomic) NSMutableArray<Phone*> *phones;
 
 -(instancetype)initWithName:(NSString*) name email:(NSString*) email;
 -(void)contactPrint;
