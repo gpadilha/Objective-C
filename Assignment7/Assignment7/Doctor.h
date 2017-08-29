@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "Patient.h"
-#include "Prescription.h"
+#import "Patient.h"
+#import "Prescription.h"
 
 @interface Doctor : NSObject
 

@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "InputCollector.h"
-#include "GameController.h"
-#include "Dice.h"
+#import "InputCollector.h"
+#import "GameController.h"
+#import "Dice.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

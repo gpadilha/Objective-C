@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "HeathInsurance.h"
+#import "HeathInsurance.h"
 
 @interface Patient : NSObject
 
